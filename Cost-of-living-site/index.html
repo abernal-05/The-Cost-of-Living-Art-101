@@ -14,21 +14,30 @@
 	<!-- Include a sitewide CSS file for consistent styling across the site -->
 	<link rel="stylesheet" type="text/css" href="css/site.css">
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="css/homepage.css">
+	<link rel="stylesheet" type="text/css" href="css/page.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script type="text/javascript" src="./js/lab.js" DEFER></script> 
 </head>
 <body>
-	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	
 	<main id="content">
+		<style>
+			body {
+			  background-image: url('./img/coststart.png');
+			  background-size: cover;       /* makes the image cover the entire background */
+			  background-repeat: none; /* avoids tiling */
+			  background-position: center;  /* centers the image */
+			  margin: 10;                    /* removes default body margin */
+			  height: 100vh;                /* ensures body takes full viewport height */
+			}
+		  </style>
 		<section>
-			<h1>Group 5 Homepage</h1>
 			<div class="minor-section">
-
+				<a href="page2/">
+					<button>Start</button>
+				  </a>
 			</div>
 			<div class="minor-section">
-	
-					
 			</div>
 		</section>
 	</main>
