@@ -1,0 +1,11 @@
+button {
+    position: fixed;
+    bottom: 500px;      
+    left: 33%;          
+    transform: translateX(-250%); 
+    background-color: transparent;
+    border: none;
+    width: 40px;
+  }
+
+ 

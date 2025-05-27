@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="css/page.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script type="text/javascript" src="./js/lab.js" DEFER></script> 
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 	
@@ -24,15 +25,38 @@
         
         <style>
 			body {
-			  background-image: url('./img/room1.png');
+			  background-image: url('./img/roombase.png');
 			  background-size: cover;       /* makes the image cover the entire background */
 			  background-repeat: none; /* avoids tiling */
 			  background-position: center;  /* centers the image */
-			  margin: 10;                    /* removes default body margin */
+			  margin: 0;                    /* removes default body margin */
 			  height: 100vh;                /* ensures body takes full viewport height */
 			}
 		  </style>
 		<section>
+			<button id ="button">
+				<img src="img/lamp.png" alt="Button Image">
+			</button>
+			<div id="image-container"></div>
+			<script>
+			$(document).ready(function() {
+    let imageVisible = false;
+
+    $('#button').click(function() {
+        if (!imageVisible) {
+            $('#image-container').append(
+                '<img id="toggle-image" src="img/lightbeam.png" alt="light" style="position: fixed; bottom: 450px; left: 32%; transform: translateX(-30%); opacity: 0.6; background-color: transparent; border: none; width: 200px;">'
+            );
+            imageVisible = true;
+        } else {
+            $('#toggle-image').remove();
+            imageVisible = false;
+        }
+    });
+});
+			
+			</script>
+
 			<div class="minor-section">
 			</div>
 			<div class="minor-section">
@@ -40,6 +64,7 @@
 					
 			</div>
 		</section>
+
 	</main>
 </body>
 </html>
