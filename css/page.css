@@ -1,0 +1,12 @@
+button img {
+    width: 100px;   /* Set the desired width */
+   
+}
+button {
+    position: fixed;
+    bottom: 20px;       /* distance from bottom */
+    left: 50%;          
+    transform: translateX(-50%);  /* center horizontally */
+    background-color: transparent;
+    border: none;
+  }
