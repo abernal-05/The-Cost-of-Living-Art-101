@@ -8,4 +8,50 @@ button {
     width: 40px;
   }
 
- 
+ul {
+    box-sizing: border-box;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 8px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+    user-select:none;
+}
+
+ul li:nth-child(odd){
+    background: #f9f9f9
+}
+
+ul li:hover{
+    background: #f6ffbd;
+}
+
+.header{
+  background-color: #e091e4;
+  padding: 15px 20px;
+  color: white;
+  text-align: center;
+}
+
+input[id=cb]{
+  display: none;
+}
+
+input[id=cb]: checked p.strikethrough{
+  text-decoration: line-through;
+  color: black;
+}
+
