@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<div class="navbar">
-		
-	</div>
 	<title>Group 5 Homepage</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
@@ -16,56 +13,68 @@
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="css/page.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="./js/lab.js" DEFER></script> 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./js/lab.js" DEFER></script> 
+  <style>
+    body {
+      background-image: url('./img/roombase.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      height: 100vh;
+    }
+
+    .light-control {
+      position: fixed;
+      left: 21.5%;
+      opacity: 0.9;
+      background-color: transparent;
+      border: none;
+	  top: 11%;
+    }
+	.light-control img{
+		width: 390px
+	}
+
+    .light-control button {
+      border: none;
+	  left:34.5%;
+	  top:2%;
+    }
+
+    .light-control button img {
+      width: 220px;
+    }
+
+	#door-button img{
+		width: 160px;
+	}
+	#door-button{
+		left:72.7%;
+		top:39.5%
+	}
+  </style>
 </head>
 <body>
-	
-	<main id="content">
-        
-        <style>
-			body {
+  <main id="content">
+    <div class="light-control">
+      <img id="myImage" src="img/lightbeam.png" alt="light">
+      <button onclick="toggleImage()">
+		<img src="img/lamp.png" alt="Button Image">
+	  </button>
+    </div>
+  </main>
 
-			  background-image: url('./img/roombase.png');
-			  background-size: cover;       /* makes the image cover the entire background */
-			  background-repeat: none; /* avoids tiling */
-			  background-position: center;  /* centers the image */
-			  margin: 0;                    /* removes default body margin */
-			  height: 100vh;                /* ensures body takes full viewport height */
-			}
-		  </style>
-		<section>
-			<button id ="button">
-				<img src="img/lamp.png" alt="Button Image">
-			</button>
-			<div id="image-container"></div>
-			<script>
-			$(document).ready(function() {
-    let imageVisible = false;
-
-    $('#button').click(function() {
-        if (!imageVisible) {
-            $('#image-container').append(
-                '<img id="toggle-image" src="img/lightbeam.png" alt="light" style="position: fixed; bottom: 450px; left: 32%; transform: translateX(-30%); opacity: 0.6; background-color: transparent; border: none; width: 200px;">'
-            );
-            imageVisible = true;
-        } else {
-            $('#toggle-image').remove();
-            imageVisible = false;
-        }
-    });
-});
-			
-			</script>
-
-			<div class="minor-section">
-			</div>
-			<div class="minor-section">
-	
-					
-			</div>
-		</section>
-
-	</main>
+  <script>
+    function toggleImage() {
+      $("#myImage").toggle();
+    }
+  </script>
+  <a href="page3/">
+	<button id ="door-button">
+		<img src="img/door.png" alt="Button Image">
+	</button>
+  </a>
 </body>
 </html>
