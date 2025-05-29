@@ -27,14 +27,16 @@
 
     .light-control {
       position: fixed;
-      left: 21.5%;
+      left: 24.6%;
       opacity: 0.9;
       background-color: transparent;
       border: none;
-	  top: 11%;
+	  top: 17.5%;
+	  z-index: 2;
     }
 	.light-control img{
-		width: 390px
+		width: 290px;
+		z-index: 2;
 	}
 
     .light-control button {
@@ -54,6 +56,31 @@
 		left:72.7%;
 		top:39.5%
 	}
+
+	.light-control-2 button{
+		left: 83%;
+		top: 48%;
+		z-index: 1
+	}
+	.light-control-2 button img {
+		width: 47px;
+	}
+	.laptop-position{
+		position: absolute;
+		top:50%;
+		left:7%;
+		width: 180px;
+		
+	}
+	#darkness{
+		position: fixed;
+		top:0;
+		left:0;
+		height: 100 vw;
+		object-fit: cover;
+		z-index: 0;
+	}
+
   </style>
 </head>
 <body>
@@ -64,18 +91,30 @@
 		<img src="img/lamp.png" alt="Button Image">
 	  </button>
     </div>
-  </main>
-
+	
+	
+	<div class="light-control-2">
+		<img id="darkness" src="img/dark.png" alt="dark">
+		<button onclick="toggleImage2()">
+		  <img src="img/lightswitch.png" alt="switch">
+		</button>
+	  </div>
+	  
+	
   <script>
     function toggleImage() {
       $("#myImage").toggle();
+    }
+	function toggleImage2() {
+      $("#darkness").toggle();
     }
   </script>
   <a href="page3/">
 	<button id ="door-button">
 		<img src="img/door.png" alt="Button Image">
 	</button>
-  
+  </a>
+	
 
 		<input type="checkbox" id="task1" name="Class" value="Class">
 		<label for="task1">Go to class</label>
@@ -88,6 +127,22 @@
 		
 		<input type="checkbox" id="task4" name="dinner" value="dinner">
 		<label for="task2">Get Dinner</label>
+
+
+		<img id="laptopImage" class="laptop-position" src="img/laptopopen.png" >
+		<script>
+		  $(document).ready(function() {
+			  var images = ['img/laptopclosed.png', 'img/laptopopen.png'];
+			  var currentIndex = 0;
+		
+			  $('#laptopImage').click(function() {
+				  currentIndex = (currentIndex + 1) % images.length;
+				  $(this).attr('src', images[currentIndex]);
+			  });
+		  });
+		</script>
+
+
 
 	</main>
 </body>

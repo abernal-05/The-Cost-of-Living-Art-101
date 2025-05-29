@@ -1,12 +1,11 @@
 button img {
-    width: 150px;   /* Set the desired width */
+    width: 300px;   /* Set the desired width */
    
 }
 button {
     position: fixed;
-    bottom: 300px;       /* distance from bottom */
-    left: 45%;          
-    transform: translateX(-50%);  /* center horizontally */
+    bottom: 36%;       /* distance from bottom */
+    left: 34%;          
     background-color: transparent;
     border: none;
   }
