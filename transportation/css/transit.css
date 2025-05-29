@@ -1,0 +1,62 @@
+.h1 {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 200%;
+  transform: translateX(-50%);  /* center horizontally */
+}
+
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #9A6B6C;
+}
+
+#exit {
+    background: #FFC5D7;
+    border: #9A6B6C;
+    width: 50px
+}
+
+#bus {          
+    background-color: transparent;
+    border: none;
+    top: 0px;       /* distance from bottom */
+    left: 50%;
+}
+
+#bus img {
+    width: 500px
+}
+
+#drive {         
+    background-color: transparent;
+    border: none;
+    top: 0px;       /* distance from bottom */
+    right: 50%;
+}
+
+#drive img {
+    width: 500px
+}
+
+#walk { 
+    background-color: transparent;
+    border: none;
+
+}
+
+#bike img {
+    width: 500px
+}
+
+#bike {        
+    background-color: transparent;
+    border: none;
+    top: 50px;       /* distance from bottom */
+    right: 50%;
+
+}
+
+.content {
+    background-color: #FFFFFF;
+}
