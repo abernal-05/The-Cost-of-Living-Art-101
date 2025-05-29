@@ -67,3 +67,87 @@ ul li.checked::before{
   -ms-user-select: none; /* IE 10 and IE 11*/
   user-select: none; /* Standard syntax */
 }
+
+
+#background img{
+    position: absolute;
+    width: 1200px;
+
+  }
+
+  .light-control {
+    position: absolute;
+    left: 298.5px;
+    opacity: 0.9;
+    background-color: transparent;
+    border: none;
+    top: 180px;
+  
+  }
+  .light-control img{
+      width: 258px;
+      z-index: 2;
+
+  }
+
+  .light-control button {
+    border: none;
+    left:428px;
+    top:100px;
+    z-index: 5;
+  }
+
+  .light-control button img {
+    width: 220px;
+  }
+
+  #door-button img{
+    z-index: 6;
+      width: 130px;
+  }
+  #door-button{
+      left:900px;
+      top:332px;
+      z-index: 6;
+  }
+
+  .light-control-2 button{
+    position: absolute;  
+    left: 1018px;
+      top: 380px;
+      z-index: 5
+  }
+  .light-control-2 button img {
+      width: 43px;
+  }
+  .laptop-position{
+      position: absolute;
+      top:380px;
+      left:70px;
+      width: 180px;
+      
+  }
+  #darkness{
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: 4;
+  }
+
+  .todo-container {
+      position: absolute;
+      top:10px;
+      left: 700px;
+      z-index: 2;
+      display:flex;
+      flex-direction: column;
+      width: 400px;
+  }
+  .todo-list li{
+      
+      display: flex; 
+      align-items: center;
+  }

@@ -15,92 +15,17 @@
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="./js/lab.js" DEFER></script> 
-  <style>
-    body {
-      background-image: url('./img/roombase.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin: 0;
-      height: 100vh;
-    }
 
-    .light-control {
-      position: fixed;
-      left: 24.6%;
-      opacity: 0.9;
-      background-color: transparent;
-      border: none;
-	  top: 17.5%;
-	  z-index: 2;
-    }
-	.light-control img{
-		width: 290px;
-		z-index: 2;
-	}
-
-    .light-control button {
-      border: none;
-	  left:34.5%;
-	  top:2%;
-    }
-
-    .light-control button img {
-      width: 220px;
-    }
-
-	#door-button img{
-		width: 160px;
-	}
-	#door-button{
-		left:72.7%;
-		top:39.5%
-	}
-
-	.light-control-2 button{
-		left: 83%;
-		top: 48%;
-		z-index: 1
-	}
-	.light-control-2 button img {
-		width: 47px;
-	}
-	.laptop-position{
-		position: absolute;
-		top:50%;
-		left:7%;
-		width: 180px;
-		
-	}
-	#darkness{
-		position: fixed;
-		top:0;
-		left:0;
-		width: 100vw;
-		height: 100vh;
-		object-fit: cover;
-		z-index: 0;
-	}
-
-	.todo-container {
-		position:fixed;
-		top:20px;
-		right: 80px;
-		z-index: 2;
-		display:flex;
-		flex-direction: column;
-		width: 200px;
-		padding: 15px;
-	}
-	.todo-list li{
-		
-		display: flex; 
-		align-items: center;
-	}
-  </style>
 </head>
 <body>
+	
   <main id="content">
+	<div id ="background">
+
+		<img src='img/roombase.png' alt ="background-img">
+	</div>
+
+
     <div class="light-control">
       <img id="myImage" src="img/lightbeam.png" alt="light">
       <button onclick="toggleImage()">
@@ -149,6 +74,7 @@
 	</div>
 
 	<ul class="myUL">
+		<li class="unselectable"><input type=checkbox> Get ready for Class </li>
 		<li class="unselectable"><input type=checkbox> Go to class </li>
 
 		<li class="unselectable"><input type=checkbox> Grocery shop </li>
