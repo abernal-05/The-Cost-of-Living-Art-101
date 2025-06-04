@@ -91,9 +91,10 @@ ul li.checked::before{
   }
 
   .light-control button {
+    position: absolute;
     border: none;
-    left:428px;
-    top:100px;
+    left: 129px;
+    top:-80px;
   }
 
   .light-control button img {
@@ -106,8 +107,9 @@ ul li.checked::before{
       width: 130px;
   }
   #door-button{
-      left:900px;
-      top:332px;
+    position: absolute;
+      left:896px;
+      top:330px;
       z-index: 6;
   }
 
