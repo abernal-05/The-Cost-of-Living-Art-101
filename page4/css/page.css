@@ -125,7 +125,6 @@ ul li.checked::before{
       top:380px;
       left:70px;
       width: 180px;
-      z-index: 6;
       
   }
   #darkness{
@@ -137,28 +136,6 @@ ul li.checked::before{
       object-fit: cover;
       z-index: 4;
   }
-  #starlight {
-    position: absolute;
-    left: 67px;
-    background-color: transparent;
-    border: none;
-    top: 28px;
-    opacity: .7;
-    z-index: 6;
-    width: 640px;
-  
-  }
-  .light-control-star button{
-    position: absolute;  
-    left: 223px;
-    top: 237.5px;
-      z-index: 5
-  }
-  .light-control-star button img {
-      width: 50px;
-
-  }
-
 
   .todo-container {
       position: absolute;

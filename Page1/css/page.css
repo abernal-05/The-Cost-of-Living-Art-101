@@ -1,0 +1,15 @@
+#content{
+    background-color: rgb(222, 132, 184);
+    color: rgb(108, 54, 102)
+}
+body{
+    background-color: rgb(244, 198, 213);
+    font-family:'Courier New', Courier, monospace
+}
+#button{
+    background-color: rgb(218, 28, 136);
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}

@@ -6,9 +6,8 @@
 }
 
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    color: #9A6B6C;
+        color: #9A6B6C;
+       
 }
 
 #exit {
@@ -46,13 +45,13 @@
 }
 
 #bike img {
-    width: 500px
+    width: 500px;
 }
 
 #bike {        
     background-color: transparent;
     border: none;
-    top: 50px;       /* distance from bottom */
+    top: 10px;       /* distance from bottom */
     right: 50%;
 
 }

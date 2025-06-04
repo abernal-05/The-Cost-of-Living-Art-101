@@ -40,6 +40,13 @@
 		  <img src="img/lightswitch.png" alt="switch">
 		</button>
 	  </div>
+
+	  <div class="light-control-star">
+		<img id="starlight" src="img/starlight.png" alt="star">
+		<button onclick="toggleImage3()">
+		  <img src="img/plug.png" alt="plug">
+		</button>
+	  </div>
 	  
 	
   <script>
@@ -49,12 +56,19 @@
 	function toggleImage2() {
       $("#darkness").toggle();
     }
+	function toggleImage3() {
+      $("#starlight").toggle();
+    }
   </script>
+  
+ 
   <a href="../transportation/index.html">
 	<button id ="door-button">
 		<img src="img/door.png" alt="Button Image">
 	</button>
   </a>
+ 
+ 
   <img id="laptopImage" class="laptop-position" src="img/laptopopen.png" >
 		<script>
 		  $(document).ready(function() {
