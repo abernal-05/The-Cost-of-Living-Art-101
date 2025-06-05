@@ -19,6 +19,11 @@ $(document).ready(function(){
         console.log("User chose to bike.");
     });
 
+    $("#walk").click(function() {
+
+        console.log("User chose to walk.");
+    });
+
 });
 
 
