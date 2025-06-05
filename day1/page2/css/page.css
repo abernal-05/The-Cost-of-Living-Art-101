@@ -176,3 +176,34 @@ ul li.checked::before{
       display: flex; 
       align-items: center;
   }
+
+  #outfit{
+    background-color: none;
+    position: absolute;
+    left: 280px;
+    top: 160px
+    
+  }
+  #outfit img{
+    width: 100px;
+  }
+
+  .unselectable {
+    user-select: none;
+  }
+  #readyImage {
+    position: absolute; 
+    top: 320px;         
+    left: 500px;         
+    width: 240px;
+    z-index: 4;
+    display: none;       
+  }
+  
+  #sleepReady{
+    position: absolute;
+    top: 160px;
+    left: 318px;
+    width: 400px;
+    z-index: 4;
+  }
