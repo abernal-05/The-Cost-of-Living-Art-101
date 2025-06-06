@@ -11,5 +11,13 @@ body{
     border: none;
     font-family: 'Courier New', Courier, monospace;
     
-    
+    .imageWrapper {
+  position: relative;
+}
+
+.overlayText {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+}
 }
