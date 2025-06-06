@@ -1,0 +1,209 @@
+button {
+    position: fixed;
+    bottom: 500px;      
+    left: 33%;          
+    transform: translateX(-250%); 
+    background-color: transparent;
+    border: none;
+    width: 40px;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:nth-child(odd){
+  background: #f9f9f9;
+}
+
+ul li:hover{
+  background: #ddd;
+}
+
+ul li.checked{
+  background: #e58ddb;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before{
+  content: '';
+  position: abosolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  height: 15px;
+  width: 7px;
+}
+
+.header{
+  background-color: #f889ff
+}
+
+.prevent-select{
+  -webkit-user-select: none; /*Safari*/
+  -ms-user-select: none; /* IE 10 and IE 11*/
+  user-select: none; /* Standard syntax */
+}
+
+
+#background img{
+    position: absolute;
+    width: 1200px;
+
+  }
+
+  .light-control {
+    position: absolute;
+    left: 298.5px;
+    opacity: 0.9;
+    background-color: transparent;
+    border: none;
+    top: 180px;
+    z-index: 6;
+  
+  }
+  .light-control img{
+      width: 258px;
+
+  }
+
+  .light-control button {
+    position: absolute;
+    border: none;
+    left: 129px;
+    top:-80px;
+  }
+
+  .light-control button img {
+    width: 220px;
+    z-index: 6;
+  }
+
+  #door-button img{
+    z-index: 6;
+      width: 130px;
+  }
+  #door-button{
+    position: absolute;
+      left:896px;
+      top:330px;
+      z-index: 6;
+  }
+
+  .light-control-2 button{
+    position: absolute;  
+    left: 1018px;
+      top: 380px;
+      z-index: 5
+  }
+  .light-control-2 button img {
+      width: 43px;
+  }
+  .laptop-position{
+      position: absolute;
+      top:380px;
+      left:70px;
+      width: 180px;
+      z-index: 6;
+      
+  }
+  #darkness{
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: 4;
+  }
+  #starlight {
+    position: absolute;
+    left: 67px;
+    background-color: transparent;
+    border: none;
+    top: 28px;
+    opacity: .7;
+    z-index: 6;
+    width: 640px;
+  
+  }
+  .light-control-star button{
+    position: absolute;  
+    left: 223px;
+    top: 237.5px;
+      z-index: 5
+  }
+  .light-control-star button img {
+      width: 50px;
+
+  }
+
+
+  .todo-container {
+      position: absolute;
+      top:10px;
+      left: 700px;
+      z-index: 2;
+      display:flex;
+      flex-direction: column;
+      width: 400px;
+  }
+  .todo-list li{
+      
+      display: flex; 
+      align-items: center;
+  }
+
+  #outfit{
+    background-color: none;
+    position: absolute;
+    left: 280px;
+    top: 160px
+    
+  }
+  #outfit img{
+    width: 100px;
+  }
+
+  .unselectable {
+    user-select: none;
+  }
+  #readyImage {
+    position: absolute; 
+    top: 320px;         
+    left: 500px;         
+    width: 240px;
+    z-index: 4;
+    display: none;       
+  }
+  
+  #sleepReady{
+    position: absolute;
+    top: 160px;
+    left: 318px;
+    width: 400px;
+    z-index: 4;
+  }

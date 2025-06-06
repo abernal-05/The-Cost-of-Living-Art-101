@@ -2,18 +2,19 @@
   letter-spacing: 5px;
   word-spacing: 5px;
   font-size: 200%;
+  font-family:'Courier New', Courier, monospace;
   transform: translateX(-50%);  /* center horizontally */
 }
 
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    color: #9A6B6C;
+        color: #9A6B6C;
+       
 }
 
 #exit {
     background: #FFC5D7;
     border: #9A6B6C;
+    font-family:'Courier New', Courier, monospace;
     width: 50px
 }
 
@@ -46,17 +47,24 @@
 }
 
 #bike img {
-    width: 500px
+    width: 500px;
 }
 
 #bike {        
     background-color: transparent;
     border: none;
-    top: 50px;       /* distance from bottom */
+    top: 10px;       /* distance from bottom */
     right: 50%;
 
 }
 
 .content {
     background-color: #FFFFFF;
+}
+
+#chosen-transport {
+    border: 4px, rgb(108, 54, 102);
+    background-color: rgb(244, 198, 213);
+    font-family:'Courier New', Courier, monospace
+
 }
