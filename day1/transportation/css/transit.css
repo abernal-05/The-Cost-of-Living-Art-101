@@ -44,8 +44,14 @@
 
 #walk { 
     background-color: transparent;
+    position: absolute;
     border: none;
+    top: 350px;       /* distance from bottom */
+    left: 550px;
+}
 
+#walk img {
+    width: 165px
 }
 
 #bike img {
@@ -93,4 +99,39 @@
     
     display: flex; 
     align-items: center;
+}
+
+#driveBike {
+    background: #f4c6d5;
+    border: none;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top:75px;
+    width: 300px;
+}
+
+#driveWalk {
+    border: 4px, rgb(108, 54, 102);
+    background-color: rgb(244, 198, 213);
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top:230px;
+    width: 300px;
+}
+
+#driveCar {
+    border: 4px, rgb(108, 54, 102);
+    background-color: rgb(244, 198, 213);
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    width: 300px;
+}
+
+#rideBus {
+    border: 4px, rgb(108, 54, 102);
+    background-color: rgb(244, 198, 213);
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    top:230px;
+    width: 300px;
 }

@@ -39,7 +39,7 @@ $(document).ready(function(){
     $("#bike").click(function() {
         console.log("User chose to bike.");
 
-        str = "The biking is free, and will get you to class in 30 minutes."
+        str = "Biking is free and will get you to class in 30 minutes."
 
         $("#chosen-transport").append('<p>' + str + '</p>')
 
