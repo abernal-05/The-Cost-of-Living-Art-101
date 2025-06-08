@@ -10,12 +10,12 @@
 
 	<!-- Include a sitewide CSS file for consistent styling across the site -->
 	<link rel="stylesheet" href="../css/site.css" />
-	<script src="../java/script.js"></script>
+
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="css/page.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="./js/lab.js" DEFER></script> 
+	<script type="text/javascript" src="java/java.js" DEFER></script> 
 
 </head>
 <body>
@@ -50,19 +50,7 @@
 	  </div>
 	  
 	
-  <script>
-    function toggleImage() {
-      $("#myImage").toggle();
-    }
-	function toggleImage2() {
-      $("#darkness").toggle();
-    }
-	function toggleImage3() {
-      $("#starlight").toggle();
-    }
-  </script>
-  
- 
+
   <a href="../transportation/index.html">
 	<button id ="door-button">
 		<img src="img/door.png" alt="Button Image">
@@ -71,35 +59,33 @@
  
  
   <img id="laptopImage" class="laptop-position" src="img/laptopopen.png" >
-		<script>
-		  $(document).ready(function() {
-			  var images = ['img/laptopclosed.png', 'img/laptopopen.png'];
-			  var currentIndex = 0;
-		
-			  $('#laptopImage').click(function() {
-				  currentIndex = (currentIndex + 1) % images.length;
-				  $(this).attr('src', images[currentIndex]);
-			  });
-		  });
-		</script>
+
+
+
 <div class="todo-container">
 
 	<div class="header">
 	<h1>To Do List</h1>
 	</div>
 
-	<ul class="myUL">
-		<li class="unselectable"><input type=checkbox> Get ready for Class </li>
-		<li class="unselectable"><input type=checkbox> Go to class </li>
+	<ul id="todo-list">
+		<li class="unselectable"><input type=checkbox data-id="0"> Pick an outfit for class </li>
+		<li class="unselectable"><input type=checkbox data-id="1"> Go to class </li>
 
-		<li class="unselectable"><input type=checkbox> Grocery shop </li>
+		<li class="unselectable"><input type=checkbox data-id="2"> Grocery shop </li>
 
 		<li class="unselectable"><input type=checkbox> Get new clothes</li>
 
 		<li class="unselectable"><input type=checkbox>Get Dinner</li>
 	</ul>
+	
 </div>
+<button id = outfit onclick="markTaskAsDone(0)">
+	<img id = outfitImg src="img/outfit.png" alt="Button Image">
+	<img id = sleepReady src="img/sleepready.png" alt="Button Image two" style="width:240px" >
+</button>
+<img id = readyImage src ="img/classready.png"></img>
 
-	</main>
+
 </body>
 </html>
