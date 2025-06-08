@@ -63,7 +63,7 @@ $(document).ready(function(){
         const button = "<button id = driveWalk> Walk to class </button>";
         $("#chosen-transport").append(button);
         $("#driveWalk").click(function() {
-            window.location.href = "INSERT LINK HERE"; //still need link to next page
+            window.location.href = "../page5/bus-stop/index.html"; //still need link to next page
         })
         
         

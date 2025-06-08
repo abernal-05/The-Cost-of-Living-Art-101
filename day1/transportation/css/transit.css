@@ -111,27 +111,28 @@
 }
 
 #driveWalk {
-    border: 4px, rgb(108, 54, 102);
-    background-color: rgb(244, 198, 213);
+     background: #f4c6d5;
+    border: none;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top:230px;
+    top:75px;
     width: 300px;
 }
 
 #driveCar {
-    border: 4px, rgb(108, 54, 102);
-    background-color: rgb(244, 198, 213);
+    background: #f4c6d5;
+    border: none;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
+    top:75px;
     width: 300px;
 }
 
 #rideBus {
-    border: 4px, rgb(108, 54, 102);
-    background-color: rgb(244, 198, 213);
+     background: #f4c6d5;
+    border: none;
     font-family:'Courier New', Courier, monospace;
     position: absolute;
-    top:230px;
+    top:75px;
     width: 300px;
 }
