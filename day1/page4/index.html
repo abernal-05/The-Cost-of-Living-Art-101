@@ -18,36 +18,15 @@
 
 </head>
 <body>
-	
-	<main id="content">
-		<div id ="background">
-	
-			<img src='img/grocery.png' alt ="background-img">
-		</div>
-    </style>
-</head>
-<body>
-
-<div class="game-container">
-    <img src="img/milks (1).png" alt="Game Choice">
-    <div class="buttons">
-        <button onclick="chooseOption('Oat Milk')">Oat Milk</button>
-		<div class="game-container">
-		 <img src="img/milks (2).png" alt="Game Choice">
-    <div class="buttons">
-        <button onclick="chooseOption('Whole Milk')">Whole Milk</button>
-    </div>
-</div>
-</div>
-
-<script>
-    function chooseOption(option) {
-        alert('You chose: Oat Milk ' + option);
-		function chooseOption(option) {
-        alert('You chose: Whole Milk' + option);
-        // Add game logic here
-    }
-	}
+	 <div class="background-container">
+        <div class="image-wrapper">
+          <img src="img/grocery.png" alt="background">
+   						<button id="oatmilk">
+                      <img src="img/milks (1).png" alt="oatmilk Image">
+                    </button>
+					   <button id="wholemilk">
+                      <img src="img/milks (2).png" alt="wholemilk Image">
+                    </button>
 </script>
 
 </body>

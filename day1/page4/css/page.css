@@ -88,42 +88,29 @@ ul li.checked::before{
       display: flex; 
       align-items: center;
   }
-   .game-container {
-            text-align: center;
-            margin-top: 50px;
-        }
-        .game-container img {
-            width: 300px;
-            height: auto;
-            border-radius: 8px;
-        }
-        .buttons {
-            margin-top: 20px;
-        }
-        .buttons button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            transition: background-color 0.3s;
-        }
-        .buttons button:hover {
-            background-color: #45a049;
-        }
+   
 
-   #milk1 img {
-    width: 500px;
+
+ #oatmilk {          
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    top: 290px;       /* distance from bottom */
+    left: 400px;
 }
 
-#milk1 {        
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    top: 10px;       /* distance from bottom */
-    left: 0px;
+#oatmilk img {
+    width: 500px
+}
 
+#wholemilk {         
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    top: 350px;       /* distance from bottom */
+    left: 1000px;
+}
+
+#wholemilk img {
+    width: 500px
 }
