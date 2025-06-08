@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<div class="navbar">
-		
-	</div>
+	
 	<title>Group 5 Homepage</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
@@ -16,10 +14,15 @@
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="css/page.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="./js/lab.js" DEFER></script> 
+	 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	    <script src="./Java/audio-manager.js"></script>
+
 </head>
 <body>
-
+<div class="navbar">
+		
+	</div>
+	
 	<main id="content">
 		<style>
 			#content {
@@ -41,6 +44,31 @@
 			</div>
 			<div class="minor-section">
 			</div>
+<audio id="myAudio" preload="auto">
+  <source src="song/song.m4a" type="audio/mp4">
+</audio>
+
+<script>
+let audioPlayed = false;
+const audio = document.getElementById('myAudio');
+
+// Try multiple user interaction events
+['click', 'touchstart', 'keydown', 'scroll', 'mousemove'].forEach(event => {
+  document.addEventListener(event, function playAudio() {
+    if (!audioPlayed) {
+      audio.play().then(() => {
+        audioPlayed = true;
+        console.log('Audio started playing');
+      }).catch(e => {
+        console.log('Audio play failed:', e);
+      });
+    }
+  }, { once: true, passive: true });
+});
+
+</script>
+
+
 
 		</section>
 	</main>

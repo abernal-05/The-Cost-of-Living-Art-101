@@ -9,15 +9,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<link rel="stylesheet" href="../css/site.css" />
-    <script src="../java/script.js"></script>
+    <script src="./Java/script.js"></script>
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="css/page.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="./js/lab.js" DEFER></script> 
+	<script type="text/javascript" src="./Java/lab.js" defer></script> 
+  <script src="./Java/audio-manager.js"></script>
 
 </head>
 <body>
+
+
+  
     <div class="background-container">
         <div class="image-wrapper">
           <img src="img/namebox.png" alt="background">
@@ -38,5 +42,30 @@
           <button id="button">Begin Your Day!</button>
         </div>
       </div>      
+
+   <audio id="myAudio" preload="auto">
+  <source src="song/song.m4a" type="audio/mp4">
+</audio>
+
+<script>
+let audioPlayed = false;
+const audio = document.getElementById('myAudio');
+
+// Try multiple user interaction events
+['click', 'touchstart', 'keydown', 'scroll', 'mousemove'].forEach(event => {
+  document.addEventListener(event, function playAudio() {
+    if (!audioPlayed) {
+      audio.play().then(() => {
+        audioPlayed = true;
+        console.log('Audio started playing');
+      }).catch(e => {
+        console.log('Audio play failed:', e);
+      });
+    }
+  }, { once: true, passive: true });
+});
+
+</script>
+
 </body>
 </html>
