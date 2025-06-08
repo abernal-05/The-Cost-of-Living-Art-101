@@ -70,9 +70,8 @@ ul li.checked::before{
 
 
 #background img{
-    position: absolute;
-    width: 1200px;
-
+    position: center;
+    width: 1470px;
   }
 
   .todo-container {

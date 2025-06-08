@@ -39,7 +39,7 @@ $(document).ready(function(){
     $("#bike").click(function() {
         console.log("User chose to bike.");
 
-        str = "The biking is free, and will get you to class in 30 minutes."
+        str = "Biking is free and will get you to class in 30 minutes."
 
         $("#chosen-transport").append('<p>' + str + '</p>')
 
@@ -53,4 +53,18 @@ $(document).ready(function(){
     });
 
 
+    $("#walk").click(function() {
+        console.log("User chose to walk.");
 
+        str = "Walking is free, and will get you to class in 45 minutes."
+
+        $("#chosen-transport").append('<p>' + str + '</p>')
+
+        const button = "<button id = driveWalk> Walk to class </button>";
+        $("#chosen-transport").append(button);
+        $("#driveWalk").click(function() {
+            window.location.href = "../page5/bus-stop/index.html"; //still need link to next page
+        })
+        
+        
+    });
