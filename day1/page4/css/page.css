@@ -88,3 +88,30 @@ ul li.checked::before{
       display: flex; 
       align-items: center;
   }
+   .game-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .game-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .buttons button:hover {
+            background-color: #45a049;
+        }
+    
