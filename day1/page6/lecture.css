@@ -1,0 +1,11 @@
+#background img {
+    display: block;
+    margin: 0 auto;
+    width: 1685px;
+}
+
+#next {
+    background-color: rgb(218, 28, 136);
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+}

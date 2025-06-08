@@ -4,14 +4,14 @@
     width: 1660px;
 }
 
-#bus-img img {          
+#walk { 
     background-color: transparent;
     position: absolute;
-    left:600px;
-    top:50px;
-    width:1300px;
-    z-index: 6;
+    border: none;
+    top: 350px;       /* distance from bottom */
+    left: 550px;
 }
 
-
-   
+#walk img {
+    width: 165px
+}
