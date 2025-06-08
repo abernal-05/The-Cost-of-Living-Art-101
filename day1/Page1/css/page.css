@@ -1,16 +1,18 @@
 #content{
     background-color: rgb(222, 132, 184);
-    color: rgb(108, 54, 102)
+    color: rgb(255, 255, 255)
 }
 
 #body{
-    background-color: rgb(244, 198, 213);
+    background-color: rgb(2, 0, 1);
     font-family:'Courier New', Courier, monospace
 }
 #button{
-    background-color: rgb(218, 28, 136);
+    background-color: rgb(246, 125, 193);
     border: none;
-    font-family: 'Courier New', Courier, monospace;  
+    font-family: 'Courier New', Courier, monospace;
+    width: 200px;  
+    font-size: 20px;
 }
 
 .background-container {
@@ -18,24 +20,29 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ff99ff;
+    background-color: #f9dff0;
+    
   }
   
   .image-wrapper {
     position: absolute;
     display: inline-block;
+    top: 60px;
+    left:0px;
+    
   }
   
   .overlayText {
     position: absolute;
     top: 18%;        
-    left: 28%;       
-    width: 50%;     
+    left: 400px;       
+    width: 780px;     
     padding: 1rem;
     background-color: transparent;
-    color: white;
+    color: rgb(209, 75, 135);
     border-radius: 10px;
     text-align: center;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
   }
   
