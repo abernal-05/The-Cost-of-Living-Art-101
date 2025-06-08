@@ -114,4 +114,16 @@ ul li.checked::before{
         .buttons button:hover {
             background-color: #45a049;
         }
-    
+
+   #milk1 img {
+    width: 500px;
+}
+
+#milk1 {        
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 10px;       /* distance from bottom */
+    left: 0px;
+
+}
