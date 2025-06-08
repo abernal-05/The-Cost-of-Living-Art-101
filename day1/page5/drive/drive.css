@@ -1,0 +1,17 @@
+#drive {         
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    top: 0px;       /* distance from bottom */
+    left: 400px;
+}
+
+#drive img {
+    width: 500px
+}
+
+#background img {
+    display: block;
+    margin: 0 auto;
+    width: 1660px;
+}
