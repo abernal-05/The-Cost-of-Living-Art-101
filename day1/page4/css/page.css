@@ -88,3 +88,29 @@ ul li.checked::before{
       display: flex; 
       align-items: center;
   }
+   
+
+
+ #oatmilk {          
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    top: 290px;       /* distance from bottom */
+    left: 400px;
+}
+
+#oatmilk img {
+    width: 500px
+}
+
+#wholemilk {         
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    top: 350px;       /* distance from bottom */
+    left: 1000px;
+}
+
+#wholemilk img {
+    width: 500px
+}
