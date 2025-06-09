@@ -11,17 +11,21 @@
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="walk.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<!-- script type="text/javascript" src="./js/lab.js" DEFER></script --> 
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+	<script src="walk.js" defer></script>
 
 </head>
 <body>
 	
 	<main id="content">
-		<div id ="background">
-	
-			<img src='../bus-stop/img/bus-stop.png' alt ="bus-stop">
-			<!--<img src='/transportation/img/walk' alt ="walk-img"-->
+		<div>
+			<section id ="background">
+				<img src='../img/bus-stop.png' alt ="bus-stop">
+			</section>
+			<button id="walk-img">
+				<img src='../img/walk.png' alt ="bus-img">
+			</button>
 		</div>
+		
 </body>
 </html>

@@ -10,17 +10,24 @@
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="garage.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+	<script src="garage.js" defer></script>
 
 </head>
 <body>
 	
 	<main id="content">
 		<div id ="background">
-	
 			<img src='../img/garage.png' alt ="garage-img">
-			<img src='../img/bike' alt ="bike-img">
-			
 		</div>
+		<div>
+			<button id="bike-img">
+				<img src='../img/bike.png' alt ="bike-img">
+			</button>
+		</div>
+	</main>
+			
+			
+		
 </body>
 </html>

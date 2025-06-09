@@ -4,14 +4,11 @@
     width: 1660px;
 }
 
-#walk { 
+#walk-img img {          
     background-color: transparent;
     position: absolute;
-    border: none;
-    top: 350px;       /* distance from bottom */
-    left: 550px;
-}
-
-#walk img {
-    width: 165px
+    left:450px;
+    top:260px;
+    width:750px;
+    z-index: 6;
 }
