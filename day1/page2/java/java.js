@@ -1,11 +1,14 @@
 function toggleImage() {
     $("#myImage").toggle();
+    saveToggleStatus()
   }
   function toggleImage2() {
     $("#darkness").toggle();
+    saveToggleStatus()
   }
   function toggleImage3() {
     $("#starlight").toggle();
+    saveToggleStatus()
   }
 
 //laptop toggle image
@@ -16,6 +19,7 @@ function toggleImage() {
     $('#laptopImage').click(function() {
         currentIndex = (currentIndex + 1) % images.length;
         $(this).attr('src', images[currentIndex]);
+        saveToggleStatus()
     });
 });
 
@@ -67,3 +71,14 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     $('#outfit2').on('click', function () {
       markTaskAsDone(0, 2);
     });
+
+
+    function saveToggleStatus() {
+      const status = {
+        myImage: $("#myImage").is(":visible"),
+        darkness: $("#darkness").is(":visible"),
+        starlight: $("#starlight").is(":visible"),
+        laptopImage: $("#laptopImage").is(":visible")
+      };
+      localStorage.setItem("imageStatus", JSON.stringify(status));
+    }

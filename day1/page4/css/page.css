@@ -1,12 +1,4 @@
-button {
-    position: fixed;
-    bottom: 500px;      
-    left: 33%;          
-    transform: translateX(-250%); 
-    background-color: transparent;
-    border: none;
-    width: 40px;
-}
+
 
 #background img{
   position: center;
@@ -121,4 +113,18 @@ ul li.checked::before{
 
 #wholemilk img {
     width: 500px
+}
+
+#next {
+  background-color: rgb(218, 28, 136);
+  font-size: 30px;
+  border-color: black;
+  font-family: 'Courier New', Courier, monospace;
+  width: 200px;
+}
+
+.next-container {
+  position: absolute;
+  top: 700px;
+  left: 500px;
 }
