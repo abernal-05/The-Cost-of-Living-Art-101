@@ -7,22 +7,55 @@
 	<meta charset="UTF-8" />
 	<!-- Set viewport so page remains consistently scaled w narrow devices -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<!-- Include a sitewide CSS file for consistent styling across the site -->
-	<link rel="stylesheet" type="text/css" href="css/site.css">
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="css/garage.css">
+	<link rel="stylesheet" type="text/css" href="garage.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="./js/lab.js" DEFER></script> 
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+	<script src="garage.js" defer></script>
+	 <script src="./Java/audio-manager.js"></script>
 
 </head>
 <body>
 	
 	<main id="content">
 		<div id ="background">
-	
-			<img src='img/garage.png' alt ="garage-img">
+			<img src='../img/garage.png' alt ="garage-img">
 		</div>
+		<div>
+			<button id="bike-img">
+				<img src='../img/bike.png' alt ="bike-img">
+			</button>
+		</div>
+	</main>
+			
+			
+		
+
+ <audio id="myAudio" preload="auto">
+  <source src="song/song.m4a" type="audio/mp4">
+</audio>
+
+<script>
+let audioPlayed = false;
+const audio = document.getElementById('myAudio');
+
+// Try multiple user interaction events
+['click', 'touchstart', 'keydown', 'scroll', 'mousemove'].forEach(event => {
+  document.addEventListener(event, function playAudio() {
+    if (!audioPlayed) {
+      audio.play().then(() => {
+        audioPlayed = true;
+        console.log('Audio started playing');
+      }).catch(e => {
+        console.log('Audio play failed:', e);
+      });
+    }
+  }, { once: true, passive: true });
+});
+
+</script>
+
+
+
 </body>
 </html>

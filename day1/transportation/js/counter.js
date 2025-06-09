@@ -30,7 +30,7 @@ $(document).ready(function(){
         const button = "<button id = driveCar> Drive to class</button>";
         $("#chosen-transport").append(button);
         $("#driveCar").click(function() {
-            window.location.href = "../page5/garage/index.html";//still need link to next page
+            window.location.href = "../page5/drive/index.html";//still need link to next page
         });
     });
         
@@ -63,7 +63,7 @@ $(document).ready(function(){
         const button = "<button id = driveWalk> Walk to class </button>";
         $("#chosen-transport").append(button);
         $("#driveWalk").click(function() {
-            window.location.href = "../page5/bus-stop/index.html";
+            window.location.href = "../page5/walk/index.html"; //still need link to next page
         })
         
         

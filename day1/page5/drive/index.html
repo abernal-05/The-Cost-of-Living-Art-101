@@ -8,24 +8,27 @@
 	<!-- Set viewport so page remains consistently scaled w narrow devices -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Lab-specifc CSS file for any special styling of this particular page -->
-	<link rel="stylesheet" type="text/css" href="walk.css">
+	<!-- Include a sitewide CSS file for consistent styling across the site -->
+    <link rel="stylesheet" type="text/css" href="drive.css">
+
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-	<script src="walk.js" defer></script>
+	<script src="drive.js" defer></script>
+    
 
 </head>
 <body>
-	
 	<main id="content">
-		<div>
-			<section id ="background">
-				<img src='../img/bus-stop.png' alt ="bus-stop">
-			</section>
-			<button id="walk-img">
-				<img src='../img/walk.png' alt ="bus-img">
-			</button>
+		<div id ="background">
+
+			<img src='../img/garage.png' alt ="garage-img">
+			
 		</div>
-		
+        <div>
+           <button id="drive-img">
+                <img src='../img/car.png' alt ="car-img">
+            </button>
+        </div>
+    </main>
 </body>
 </html>

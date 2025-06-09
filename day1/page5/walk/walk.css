@@ -1,0 +1,14 @@
+#background img {
+    display: block;
+    margin: 0 auto;
+    width: 1660px;
+}
+
+#walk-img img {          
+    background-color: transparent;
+    position: absolute;
+    left:450px;
+    top:260px;
+    width:750px;
+    z-index: 6;
+}
