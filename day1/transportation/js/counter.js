@@ -5,9 +5,10 @@ $(document).ready(function(){
     console.log("js & doc loaded");
 
     $("#bus").click(function(){
+        $("#chosen-transport").empty();
         console.log("User chose the bus.")
 
-        str = "The bus is free, and will get you to class in 25 minutes"
+        str = "The bus is free with your student pass, and will get you to class in 25 minutes"
 
         $("#chosen-transport").append('<p>' + str + '</p>')
         
@@ -22,6 +23,7 @@ $(document).ready(function(){
     
 
     $("#drive").click(function() {
+        $("#chosen-transport").empty();
         console.log("User chose to drive.");
         
         str = "Your tank is almost empty, filling it will cost $30... The nearest station is 5 minutes away, and you're a 10 minute drive from campus."
@@ -37,6 +39,7 @@ $(document).ready(function(){
     });
 
     $("#bike").click(function() {
+        $("#chosen-transport").empty();
         console.log("User chose to bike.");
 
         str = "Biking is free and will get you to class in 30 minutes."
@@ -54,6 +57,7 @@ $(document).ready(function(){
 
 
     $("#walk").click(function() {
+        $("#chosen-transport").empty();
         console.log("User chose to walk.");
 
         str = "Walking is free, and will get you to class in 45 minutes."
