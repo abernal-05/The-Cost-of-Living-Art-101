@@ -132,4 +132,20 @@
     font-size: 20px;
     width: 300px;
 }
+.todo-container {
+    position: absolute;
+    top:260px;
+    right: 10px;
+    z-index: 2;
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+  }
+
+
+.todo-list li{
+    
+    display: flex; 
+    align-items: center;
+}
 

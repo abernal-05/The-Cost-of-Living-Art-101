@@ -84,15 +84,34 @@
 	</ul>
 	
 </div>
-<button id = outfit onclick="markTaskAsDone(0)">
-	<img id = outfitImg src="img/outfit.png" alt="Button Image">
-	<img id = sleepReady src="img/sleepready.png" alt="Button Image two" style="width:240px" >
+<button id="outfit1">
+  <img src="img/outfit.png" alt="Outfit 1">
 </button>
-<img id = readyImage src ="img/classready.png"></img>
+
+<!-- Outfit Button 2 -->
+<button id="outfit2">
+  <img src="img/outfittwo.png" alt="Outfit 2">
+</button>
+
+<!-- Shared checkbox -->
+<input type="checkbox" data-id="0" style="display:none;">
+
+<!-- Image containers -->
+<img id="sleepReady" src="img/sleepready.png" style="width:240px;">
+<img id="classready1" src="img/classready.png" style="display:none; width:240px;">
+<img id="classready2" src="img/classreadytwo.png" style="display:none; width:240px;">
+
+
+
+
 
 <audio id="myAudio" preload="auto">
   <source src="song/song.m4a" type="audio/mp4">
 </audio>
+
+
+
+
 
 <script>
 let audioPlayed = false;

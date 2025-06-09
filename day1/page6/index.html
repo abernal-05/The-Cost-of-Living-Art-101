@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="lecture.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="lecture.js" DEFER></script > 
+	<script type="text/javascript" src="lecture.js" DEFER></script> 
 
 </head>
 <body>
@@ -23,7 +23,27 @@
             <section id ="background">
 			    <img src='img/lecture.png' alt ="lecture-hall"> 
 		    </section>
-            <button id="next">Leave Class</button>
+            <button id="next">Go to Grocery Store</button>
         </div>
+		<div class="todo-container">
+
+			<div class="header">
+			<h1>To Do List</h1>
+			</div>
+		
+			<ul id="todo-list">
+				<li class="unselectable"><input type=checkbox data-id="0"> Pick an outfit for class </li>
+				<li class="unselectable"><input type=checkbox data-id="1"> Go to class </li>
+		
+				<li class="unselectable"><input type=checkbox data-id="2"> Grocery shop </li>
+		
+				<li class="unselectable"><input type=checkbox> Get new clothes</li>
+		
+				<li class="unselectable"><input type=checkbox>Get Dinner</li>
+			</ul>
+			
+		</div>
+
+	</main>
 </body>
 </html>

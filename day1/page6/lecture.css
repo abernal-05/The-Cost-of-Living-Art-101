@@ -6,6 +6,21 @@
 
 #next {
     background-color: rgb(218, 28, 136);
-    border: none;
+    font-size: 30px;
+    border-color: black;
     font-family: 'Courier New', Courier, monospace;
+}
+.todo-container {
+    position: absolute;
+    top:0px;
+    right: 0px;
+    display:flex;
+    flex-direction: column;
+    width: 260px;
+    background-color: rgb(244, 174, 234);
+}
+.todo-list li{
+    
+    display: flex; 
+    align-items: center;
 }
