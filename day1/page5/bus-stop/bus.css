@@ -9,11 +9,17 @@
 #bus-img img {          
     background-color: transparent;
     position: absolute;
-    left:600px;
-    top:50px;
-    width:1300px;
+    left:500px;
+    top:300px;
+    width:600px;
     z-index: 6;
+    transition: box-shadow 0.3s ease;
 }
 
 
+
    
+#bus-img:hover img {
+    box-shadow: 0 0 20px 5px rgba(255, 102, 222, 0.7); /* soft yellow glow */
+    border-radius: 5px;
+  }

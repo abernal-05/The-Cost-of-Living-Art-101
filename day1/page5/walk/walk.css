@@ -7,8 +7,21 @@
 #walk-img img {          
     background-color: transparent;
     position: absolute;
-    left:450px;
-    top:260px;
-    width:750px;
+    left:680px;
+    top:130px;
+    width:230px;
     z-index: 6;
+    transform: scaleX(-1);
+    
 }
+
+
+
+#walk-img img {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #walk-img:hover img {
+    box-shadow: 0 0 20px 5px rgba(255, 102, 222, 0.7); /* soft yellow glow */
+    border-radius: 5px;
+  }

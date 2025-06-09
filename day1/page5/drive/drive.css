@@ -3,13 +3,19 @@
     background-color: transparent;
     position: absolute;
     left:250px;
-    top:50px;
-    width:1300px;
-    z-index: 6;
+    top:300px;
+    width:600px;
+    transition: box-shadow 0.3s ease;
 }
+
 
 #background img {
     position: center;
     width: 1200px;
-
+    
 }
+  
+  #drive-img:hover img {
+    box-shadow: 0 0 20px 5px rgba(255, 102, 222, 0.7); /* soft yellow glow */
+    border-radius: 5px;
+  }

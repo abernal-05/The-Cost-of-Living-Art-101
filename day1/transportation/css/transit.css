@@ -44,7 +44,8 @@
 }
 
 #walk img {
-    width: 165px
+    width: 165px;
+    transform: scalex(-1);
 }
 
 #bike img {
@@ -131,3 +132,4 @@
     font-size: 20px;
     width: 300px;
 }
+

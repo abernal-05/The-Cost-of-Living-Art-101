@@ -7,8 +7,14 @@
 #bike-img img {
     background-color: transparent;
     position: absolute;
-    left:250px;
-    top:50px;
-    width:1300px;
-    z-index: 6;
+    left:200px;
+    top:300px;
+    width:400px;
+    
+    transition: box-shadow 0.3s ease;
 }
+  
+  #bike-img:hover img {
+    box-shadow: 0 0 20px 5px rgba(255, 102, 222, 0.7); /* soft yellow glow */
+    border-radius: 5px;
+  }
