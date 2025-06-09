@@ -15,19 +15,48 @@
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="./js/lab.js" DEFER></script> 
+	<script src="./Java/audio-manager.js"></script>
 
 </head>
 <body>
-	 <div class="background-container">
-        <div class="image-wrapper">
-          <img src="img/grocery.png" alt="background">
-   						<button id="oatmilk">
-                      <img src="img/milks (1).png" alt="oatmilk Image">
-                    </button>
-					   <button id="wholemilk">
-                      <img src="img/milks (2).png" alt="wholemilk Image">
-                    </button>
+	
+	<main id="content">
+		<div id ="background">
+	
+			<img src='img/grocery.png' alt ="background-img">
+		</div>
+
+</div>
+<button id = outfit onclick="markTaskAsDone(0)">
+	<img id = outfitImg src="img/outfit.png" alt="Button Image">
+	<img id = sleepReady src="img/sleepready.png" alt="Button Image two" style="width:240px" >
+</button>
+<img id = readyImage src ="img/classready.png"></img>
+
+<audio id="myAudio" preload="auto">
+  <source src="song/song.m4a" type="audio/mp4">
+</audio>
+
+<script>
+let audioPlayed = false;
+const audio = document.getElementById('myAudio');
+
+// Try multiple user interaction events
+['click', 'touchstart', 'keydown', 'scroll', 'mousemove'].forEach(event => {
+  document.addEventListener(event, function playAudio() {
+    if (!audioPlayed) {
+      audio.play().then(() => {
+        audioPlayed = true;
+        console.log('Audio started playing');
+      }).catch(e => {
+        console.log('Audio play failed:', e);
+      });
+    }
+  }, { once: true, passive: true });
+});
+
 </script>
+
 
 </body>
 </html>
