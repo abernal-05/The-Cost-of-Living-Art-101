@@ -18,7 +18,6 @@ function toggleOatInCart() {
     function toggleBeefInCart() {
     $("#beef-in-cart").toggle();
     $("#beefburger-button-img").hide();
-<<<<<<< HEAD
   }
    function toggleStrawberryInCart() {
     $("#strawberry-in-cart").toggle();
@@ -27,7 +26,4 @@ function toggleOatInCart() {
    function toggleOrangeInCart() {
     $("#orange-in-cart").toggle();
     $("#oranges-button-img").hide();
-=======
-    $("#tofuburger-button-img").hide();
->>>>>>> a24a741d4cbd1eae538e946339a7c369aafde203
   }
