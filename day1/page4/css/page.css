@@ -94,7 +94,7 @@ ul li.checked::before{
     display:none;
     top: 450px;
     left: 400px;
-    width: 200px;
+    width: 150px;
   }
   
   .oat-control {
@@ -111,7 +111,7 @@ ul li.checked::before{
     
   }
   .oat-control img {
-    width: 300px;
+    width: 250px;
     
   }
 
@@ -120,8 +120,8 @@ ul li.checked::before{
     position: absolute;
     display:none;
     top: 450px;
-    left: 600px;
-    width: 200px;
+    left: 560px;
+    width: 150px;
   }
   
   .whole-control {
@@ -141,7 +141,172 @@ ul li.checked::before{
     width: 300px;
     
   }
+
   
+  #tofu-in-cart {
+    position: absolute;
+    display:none;
+    top: 450px;
+    left: 500px;
+    width: 100px;
+  }
+  
+  .tofu-control {
+    position: absolute;
+    top: 30px;
+    left: 600px;
+
+  }
+  
+  .tofu-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .tofu-control img {
+    width: 200px;
+    
+  }
+
+  
+
+#beef-in-cart {
+    position: absolute;
+    display:none;
+    top: 500px;
+    left: 670px;
+    width: 100px;
+  }
+  
+  .beef-control {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+
+  }
+  
+  .beef-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .beef-control img {
+    width: 200px;
+    
+  }
+  
+
+  #strawberry-in-cart {
+    position: absolute;
+    display:none;
+    top: 590px;
+    left: 400px;
+    width: 130px;
+  }
+  
+  .strawberry-control {
+    position: absolute;
+    top: 350px;
+    left: -500px;
+
+  }
+  
+  .strawberry-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .strawberry-control img {
+    width: 250px;
+    
+  }
+
+  
+  #orange-in-cart {
+    position: absolute;
+    display:none;
+    top: 530px;
+    left: 500px;
+    width: 130px;
+  }
+  
+  .orange-control {
+    position: absolute;
+    top: 320px;
+    left: -250px;
+
+  }
+  
+  .orange-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .orange-control img {
+    width: 230px;
+    
+  }
+
+
+  #apple-in-cart {
+    position: absolute;
+    display:none;
+    top: 530px;
+    left: 500px;
+    width: 130px;
+  }
+  
+  .apple-control {
+    position: absolute;
+    top: 320px;
+    left: 1px;
+
+  }
+  
+  .apple-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .apple-control img {
+    width: 250px;
+    
+  }
+
+
+   #grape-in-cart {
+    position: absolute;
+    display:none;
+    top: 530px;
+    left: 500px;
+    width: 130px;
+  }
+  
+  .grape-control {
+    position: absolute;
+    top: 360px;
+    left: 280px;
+
+  }
+  
+  .grape-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .grape-control img {
+    width: 250px;
+    
+  }
+
+
+
 
 
   .light-control {

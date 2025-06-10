@@ -3,6 +3,6 @@ $(document).ready(function(){
 
     $("#button").click(function(){
     console.log("start day")
-    window.location.href = "../page2/index.html";//still need link to next page
+    window.location.href = "../page2/index.html";
     })
 })
