@@ -111,7 +111,7 @@ ul li.checked::before{
     
   }
   .oat-control img {
-    width: 300px;
+    width: 250px;
     
   }
 
@@ -139,6 +139,33 @@ ul li.checked::before{
   }
   .whole-control img {
     width: 300px;
+    
+  }
+
+  
+  #tofu-in-cart {
+    position: absolute;
+    display:none;
+    top: 450px;
+    left: 600px;
+    width: 200px;
+  }
+  
+  .tofu-control {
+    position: absolute;
+    top: 30px;
+    left: 600px;
+
+  }
+  
+  .tofu-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .tofu-control img {
+    width: 200px;
     
   }
   
