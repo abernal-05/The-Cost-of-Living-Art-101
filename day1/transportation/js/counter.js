@@ -15,13 +15,9 @@ $(document).ready(function(){
         const button = "<button id = rideBus> Take the bus to class </button>";
         $("#chosen-transport").append(button);
         $("#rideBus").click(function() {
-            window.location.href = "../page5/bus-stop/index.html"; //still need link to next page
+            window.location.href = "../page5/bus-stop/index.html"; 
         })
-        
-
     });
-    
-
     $("#drive").click(function() {
         $("#chosen-transport").empty();
         console.log("User chose to drive.");
