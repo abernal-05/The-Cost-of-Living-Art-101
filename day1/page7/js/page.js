@@ -3,8 +3,8 @@ $(document).ready(function () {
   
     if (statusData) {
       const myImageMsg = statusData.myImage
-        ? "You left the lamp on. Make sure you turn lights off before you leave the house."
-        : "You turned off the lamp.";
+        ? "You turned off the lamp."
+        : "You left the lamp on. Make sure you turn lights off before you leave the house.";
   
       const darknessMsg = statusData.darkness
         ? "Good job! You turned the big light off."
