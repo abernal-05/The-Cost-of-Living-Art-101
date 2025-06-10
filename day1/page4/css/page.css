@@ -198,7 +198,66 @@ ul li.checked::before{
   }
   
 
+  #strawberry-in-cart {
+    position: absolute;
+    display:none;
+    top: 590px;
+    left: 400px;
+    width: 130px;
+  }
+  
+  .strawberry-control {
+    position: absolute;
+    top: 350px;
+    left: -500px;
 
+  }
+  
+  .strawberry-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .strawberry-control img {
+    width: 250px;
+    
+  }
+
+  
+  #orange-in-cart {
+    position: absolute;
+    display:none;
+    top: 590px;
+    left: 400px;
+    width: 130px;
+  }
+  
+  .orange-control {
+    position: absolute;
+    top: 320px;
+    left: -250px;
+
+  }
+  
+  .orange-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .orange-control img {
+    width: 230px;
+    
+  }
+
+
+
+
+
+
+
+  
   .light-control {
     position: absolute;
     left: 298.5px;

@@ -16,3 +16,11 @@ function toggleOatInCart() {
     $("#beef-in-cart").toggle();
     $("#beefburger-button-img").hide();
   }
+   function toggleStrawberryInCart() {
+    $("#strawberry-in-cart").toggle();
+    $("#strawberries-button-img").hide();
+  }
+   function toggleOrangeInCart() {
+    $("#orange-in-cart").toggle();
+    $("#oranges-button-img").hide();
+  }
