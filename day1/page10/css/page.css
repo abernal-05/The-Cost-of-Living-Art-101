@@ -1,9 +1,12 @@
+#content{
+    background-color: rgb(222, 132, 184);
+    color: rgb(255, 255, 255)
+}
 
 #body{
     background-color: rgb(2, 0, 1);
     font-family:'Courier New', Courier, monospace
 }
-
 #button{
     background-color: rgb(246, 125, 193);
     border: none;
@@ -14,6 +17,8 @@
 
 .background-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-color: #f9dff0;
     
@@ -40,14 +45,11 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
   }
-
-.button { background-color: rgb(246, 125, 193);
-  border: none; 
-  color: rgb(0, 0, 0);
-  text-align: center; 
-  font-family: 'Courier New', Courier, monospace;
-  text-decoration: none; 
-  display: inline-block; 
-  font-size: 20px; 
-  width: 150px;
-  cursor: pointer; }
+  
+#message{
+  background-color: rgb(246, 125, 193);
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    width: 200px;  
+    font-size: 20px;
+}

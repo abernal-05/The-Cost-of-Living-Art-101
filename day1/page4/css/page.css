@@ -228,8 +228,8 @@ ul li.checked::before{
   #orange-in-cart {
     position: absolute;
     display:none;
-    top: 590px;
-    left: 400px;
+    top: 530px;
+    left: 500px;
     width: 130px;
   }
   
@@ -252,12 +252,63 @@ ul li.checked::before{
   }
 
 
-
-
-
-
-
+  #apple-in-cart {
+    position: absolute;
+    display:none;
+    top: 530px;
+    left: 500px;
+    width: 130px;
+  }
   
+  .apple-control {
+    position: absolute;
+    top: 320px;
+    left: 1px;
+
+  }
+  
+  .apple-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .apple-control img {
+    width: 250px;
+    
+  }
+
+
+   #grape-in-cart {
+    position: absolute;
+    display:none;
+    top: 530px;
+    left: 500px;
+    width: 130px;
+  }
+  
+  .grape-control {
+    position: absolute;
+    top: 360px;
+    left: 280px;
+
+  }
+  
+  .grape-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .grape-control img {
+    width: 250px;
+    
+  }
+
+
+
+
+
   .light-control {
     position: absolute;
     left: 298.5px;
