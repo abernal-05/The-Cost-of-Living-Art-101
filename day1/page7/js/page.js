@@ -14,7 +14,7 @@ $(document).ready(function () {
         ? "You left the star lights on. Make sure you turn lights off before you leave the house."
         : "Good job! You turned the star lights off.";
   
-      const laptopImgMsg = statusData.laptopImg
+      const laptopImageMsg = statusData.laptopImage
         ? "You left your laptop open. Make sure to close and power off your electronics before leaving."
         : "Good job! You closed your laptop.";
   
@@ -23,7 +23,7 @@ $(document).ready(function () {
           <li>${myImageMsg}</li>
           <li>${darknessMsg}</li>
           <li>${starlightMsg}</li>
-          <li>${laptopImgMsg}</li>
+          <li>${laptopImageMsg}</li>
         </ul>
       `;
   
