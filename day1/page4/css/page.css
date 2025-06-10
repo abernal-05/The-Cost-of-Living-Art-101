@@ -228,8 +228,8 @@ ul li.checked::before{
   #orange-in-cart {
     position: absolute;
     display:none;
-    top: 590px;
-    left: 400px;
+    top: 530px;
+    left: 500px;
     width: 130px;
   }
   
@@ -257,7 +257,7 @@ ul li.checked::before{
 
 
 
-  
+
   .light-control {
     position: absolute;
     left: 298.5px;

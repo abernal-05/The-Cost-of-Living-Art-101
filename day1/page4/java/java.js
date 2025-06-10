@@ -18,16 +18,15 @@ function toggleOatInCart() {
     function toggleBeefInCart() {
     $("#beef-in-cart").toggle();
     $("#beefburger-button-img").hide();
-<<<<<<< HEAD
+    $("#tofuburger-button-img").hide();
   }
    function toggleStrawberryInCart() {
     $("#strawberry-in-cart").toggle();
     $("#strawberries-button-img").hide();
+    $("#orange-button-img").hide();
   }
    function toggleOrangeInCart() {
     $("#orange-in-cart").toggle();
-    $("#oranges-button-img").hide();
-=======
-    $("#tofuburger-button-img").hide();
->>>>>>> a24a741d4cbd1eae538e946339a7c369aafde203
+    $("#orange-button-img").hide();
+    $("#strawberries-button-img").hide();
   }
