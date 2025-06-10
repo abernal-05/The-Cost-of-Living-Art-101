@@ -25,13 +25,15 @@
 			<img src="img/grocery.png" alt="background">
 		</div>
 	
-		<div>
-			<button id="oatmilk">
-				<img src="img/milks (1).png" alt="oatmilk Image">
-			</button>
-			<button id="wholemilk">
-				<img src="img/milks (2).png" alt="wholemilk Image">
-			</button>
+		<img id="oat-in-cart" src="img/milks (1).png" alt="oat-in-cart">
+
+		<!-- This is the button in a different location -->
+		<div class="oat-control">
+		  <button onclick="toggleOatInCart()">
+			<img id="oatmilk-button-img" src="img/milks (1).png" alt="oatmilk">
+		  </button>
+		</div>
+	
 		</div>
 	
 		<!-- These are needed for appending output -->
@@ -39,15 +41,13 @@
 		<div id="chosen-milk"></div>
 
 </div>
-<button id = outfit onclick="markTaskAsDone(0)">
-	<img id = outfitImg src="img/outfit.png" alt="Button Image">
-	<img id = sleepReady src="img/sleepready.png" alt="Button Image two" style="width:240px" >
-</button>
+
 
 </div>
 <div class = "next-container">
 	<button id="next" onclick="location.href='../page7/index.html'">End Day</button>
 </div>
+
 
 
 <audio id="myAudio" preload="auto">
@@ -57,8 +57,6 @@
 
 
 
-</body>
-</html>
 </body>
 </html>
 	
