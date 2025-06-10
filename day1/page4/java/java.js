@@ -1,4 +1,4 @@
 function toggleOatInCart() {
     $("#oat-in-cart").toggle();
-    saveToggleStatus()
-}
+    $("#oatmilk-button-img").hide();
+  }

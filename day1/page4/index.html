@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/page.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="./js/lab.js" DEFER></script> 
+	<script type="text/javascript" src="./java/java.js" DEFER></script> 
 	<script src="./Java/audio-manager.js"></script>
 
 </head>
@@ -25,14 +25,15 @@
 			<img src="img/grocery.png" alt="background">
 		</div>
 	
-			<div class="oat-control">
-       
-        <button onclick="toggleOatInCart()">
-		<img id="oatmilk" src="img/milks (1).png" alt="oatmilk">
-		<img src="img/milks (1).png" alt="oatmilk">
-        </button>
-      </div>
+		<img id="oat-in-cart" src="img/milks (1).png" alt="oat-in-cart">
 
+		<!-- This is the button in a different location -->
+		<div class="oat-control">
+		  <button onclick="toggleOatInCart()">
+			<img id="oatmilk-button-img" src="img/milks (1).png" alt="oatmilk">
+		  </button>
+		</div>
+	
 		</div>
 	
 		<!-- These are needed for appending output -->
@@ -46,6 +47,7 @@
 <div class = "next-container">
 	<button id="next" onclick="location.href='../page7/index.html'">End Day</button>
 </div>
+
 
 
 <audio id="myAudio" preload="auto">
@@ -73,8 +75,6 @@ const audio = document.getElementById('myAudio');
 </script>
 
 
-</body>
-</html>
 </body>
 </html>
 	
