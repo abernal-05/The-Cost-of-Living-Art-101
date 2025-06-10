@@ -27,7 +27,7 @@ function toggleImage() {
 
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     const STORAGE_KEY = 'todoListState';
-    const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY)) || {};
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
 
     // Initialize checkbox state
     checkboxes.forEach(checkbox => {

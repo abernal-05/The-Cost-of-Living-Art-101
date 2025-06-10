@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const statusData = JSON.parse(sessionStorageStorage.getItem("imageStatus"));
+    const statusData = JSON.parse(localStorage.getItem("imageStatus"));
   
     if (statusData) {
       const myImageMsg = statusData.myImage
