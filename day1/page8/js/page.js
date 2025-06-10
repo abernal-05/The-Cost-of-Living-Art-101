@@ -2,28 +2,28 @@ $(document).ready(function () {
     const statusData = JSON.parse(localStorage.getItem("imageStatus"));
   
     if (statusData) {
-      const myImageMsg = statusData.myImage
+      const driveWalkMsg = statusData.driveWalk
         ? "Good job, you walked to class! Walking decreases carbon footprint."
         : "Good job, you walked to class! Walking decreases carbon footprint.";
   
-      const darknessMsg = statusData.darkness
+      const driveCarMsg = statusData.driveCar
         ? "You chose to drive. Driving can be harmful to th environment due to its emission rates."
         : "You chose to drive. Driving can be harmful to th environment due to its emission rates.";
   
-      const starlightMsg = statusData.starlight
+      const driveBikeMsg = statusData.driveBike
         ? "Good job! You chose to bike, which helped you get to class faster and reduced your carbon footprint."
         : "Good job! You chose to bike, which helped you get to class faster and reduced your carbon footprint.";
   
-      const laptopImageMsg = statusData.laptopImage
-        ? "You chose to take the bus. The bus can be a better option than driving a car, "
-        : "Good job! You closed your laptop.";
+      const rideBusMsg = statusData.rideBus
+        ? "You chose to take the bus. The bus can be a better option than driving a car, but it still emits pollution."
+        : "You chose to take the bus. The bus can be a better option than driving a car, but it still emits pollution.";
   
       const statusHTML = `
         <ul>
-          <li>${myImageMsg}</li>
-          <li>${darknessMsg}</li>
-          <li>${starlightMsg}</li>
-          <li>${laptopImageMsg}</li>
+          <li>${driveWalkMsg}</li>
+          <li>${driveCarMsg}</li>
+          <li>${driveWalkMsg}</li>
+          <li>${rideBusMsg}</li>
         </ul>
       `;
   
