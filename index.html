@@ -49,25 +49,7 @@
   <source src="song/song.m4a" type="audio/mp4">
 </audio>
 
-<script>
-let audioPlayed = false;
-const audio = document.getElementById('myAudio');
 
-// Try multiple user interaction events
-['click', 'touchstart', 'keydown', 'scroll', 'mousemove'].forEach(event => {
-  document.addEventListener(event, function playAudio() {
-    if (!audioPlayed) {
-      audio.play().then(() => {
-        audioPlayed = true;
-        console.log('Audio started playing');
-      }).catch(e => {
-        console.log('Audio play failed:', e);
-      });
-    }
-  }, { once: true, passive: true });
-});
-
-</script>
 
 
 
