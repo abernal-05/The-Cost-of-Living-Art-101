@@ -1,12 +1,4 @@
-#content{
-    background-color: rgb(222, 132, 184);
-    color: rgb(255, 255, 255)
-}
 
-#body{
-    background-color: rgb(2, 0, 1);
-    font-family:'Courier New', Courier, monospace
-}
 #button{
     background-color: rgb(246, 125, 193);
     border: none;
@@ -17,8 +9,6 @@
 
 .background-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     background-color: #f9dff0;
     
