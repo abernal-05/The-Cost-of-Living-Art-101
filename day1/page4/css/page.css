@@ -103,6 +103,18 @@ ul li.checked::before{
     width: 460px
 }
 
+#oat-in-cart {          
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    top: 20px;       /* distance from bottom */
+    left: 280px;
+  }
+
+#oat-in-cart img {
+    width: 460px
+}
+
 #wholemilk {         
     background-color: transparent;
     position: absolute;
