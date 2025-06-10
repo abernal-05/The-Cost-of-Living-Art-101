@@ -22,7 +22,6 @@ function toggleImage() {
         saveToggleStatus()
     });
 });
-
 // To do list 
 
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -64,15 +63,12 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
         $('#classready2').show();
       }
     }
-
     $('#outfit1').on('click', function () {
       markTaskAsDone(0, 1);
     });
     $('#outfit2').on('click', function () {
       markTaskAsDone(0, 2);
     });
-
-
     function saveToggleStatus() {
       const status = {
         myImage: $("#myImage").is(":visible"),
