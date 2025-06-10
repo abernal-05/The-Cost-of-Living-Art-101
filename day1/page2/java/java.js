@@ -27,7 +27,7 @@ function toggleImage() {
 
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     const STORAGE_KEY = 'todoListState';
-    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+    const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY)) || {};
 
     // Initialize checkbox state
     checkboxes.forEach(checkbox => {
@@ -47,7 +47,7 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
       if (checkbox) {
         checkbox.checked = true;
         saved[id] = true;
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
       }
     
       // Hide sleep image
@@ -84,5 +84,5 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     }
 
     function saveOpenOrClosed(){
-      localStorage.setItem('laptopImageIndex', currentIndex);
+      sessionStorage.setItem('laptopImageIndex', currentIndex);
     }
