@@ -82,3 +82,7 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
       };
       localStorage.setItem("imageStatus", JSON.stringify(status));
     }
+
+    function saveOpenOrClosed(){
+      localStorage.setItem('laptopImageIndex', currentIndex);
+    }
