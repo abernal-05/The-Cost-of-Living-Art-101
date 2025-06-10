@@ -25,18 +25,21 @@ function toggleOatInCart() {
     $("#strawberries-button-img").hide();
     $("#orange-button-img").hide();
     $("#apple-button-img").hide();
+   $("#grape-button-img").hide();
   }
    function toggleOrangeInCart() {
     $("#orange-in-cart").toggle();
     $("#orange-button-img").hide();
     $("#strawberries-button-img").hide();
     $("#apple-button-img").hide();
+   $("#grape-button-img").hide();
   }
    function toggleAppleInCart() {
     $("#apple-in-cart").toggle();
     $("#apple-button-img").hide();
     $("#strawberries-button-img").hide();
     $("#orange-button-img").hide();
+    $("#grape-button-img").hide();
   }
    function toggleGrapeInCart() {
     $("#grape-in-cart").toggle();
