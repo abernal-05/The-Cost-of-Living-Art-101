@@ -2,28 +2,38 @@ $(document).ready(function () {
     const statusData = JSON.parse(localStorage.getItem("imageStatus"));
   
     if (statusData) {
-      const myImageMsg = statusData.myImage
-        ? "You left the lamp on. Make sure you turn lights off before you leave the house."
-        : "You turned off the lamp.";
+      const OatInCartMsg = statusData.OatInCart
+        ? "Oat milk uses less water and produces fewer greenhouse emissions than dairy milk!"
+        : "Oat milk uses less water and produces fewer greenhouse emissions than dairy milk!";
   
-      const darknessMsg = statusData.darkness
-        ? "Good job! You turned the big light off."
-        : "You left the big light on. Make sure you turn lights off before you leave the house.";
+      const WholeInCartMsg = statusData.WholeInCart
+        ? "Whole milk is significantly harmful to the enviroment and animals. "
+        : "Whole milk is significantly harmful to the enviroment and animals. ";
   
-      const starlightMsg = statusData.starlight
-        ? "You left the star lights on. Make sure you turn lights off before you leave the house."
-        : "Good job! You turned the star lights off.";
+      const TofuInCartMsg = statusData.TofuInCart
+        ? "Tofu is a better sustainable choice than meats."
+        : "Tofu is a better sustainable choice than meats.";
   
-      const laptopImageMsg = statusData.laptopImage
-        ? "You left your laptop open. Make sure to close and power off your electronics before leaving."
-        : "Good job! You closed your laptop.";
-  
+      const BeefInCartMsg = statusData.TofuInCart
+        ? "Beef is harmful to animals and the environment due to its land and water consumption."
+        : "Beef is harmful to animals and the environment due to its land and water consumption.";
+
+        const StrawberryInCartMsg = statusData.StrawberryInCart
+        ? "Fruits in plastic, like the strawberries, grapes, and apples, are damanging to the environment and can often leach chemicals onto the fruits."
+        : "Fruits in plastic, like the strawberries, grapes, and apples, are damanging to the environment and can often leach chemicals onto the fruits.";
+
+        const OrangeInCartMsg = statusData.OrangeInCart
+        ? "Fruits in netting bags, like the oranges, are often environmentally sustainable because the nets are compostable!"
+        : "Fruits in netting bags, like the organges, are often environmentally sustainable because the nets are compostable!";
+
+
       const statusHTML = `
         <ul>
-          <li>${myImageMsg}</li>
-          <li>${darknessMsg}</li>
-          <li>${starlightMsg}</li>
-          <li>${laptopImageMsg}</li>
+          <li>${OatInCartMsg}</li>
+          <li>${WholeInCartMsg}</li>
+          <li>${TofuInCartMsg}</li>
+          <li>${StrawberryInCartMsg}</li>
+          <li>${OrangeInCartMsg}</li>
         </ul>
       `;
   
