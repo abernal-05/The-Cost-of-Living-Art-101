@@ -197,6 +197,93 @@ ul li.checked::before{
     
   }
   
+
+  #strawberry-in-cart {
+    position: absolute;
+    display:none;
+    top: 590px;
+    left: 400px;
+    width: 130px;
+  }
+  
+  .strawberry-control {
+    position: absolute;
+    top: 350px;
+    left: -500px;
+
+  }
+  
+  .strawberry-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .strawberry-control img {
+    width: 250px;
+    
+  }
+
+  
+  #orange-in-cart {
+    position: absolute;
+    display:none;
+    top: 590px;
+    left: 400px;
+    width: 130px;
+  }
+  
+  .orange-control {
+    position: absolute;
+    top: 320px;
+    left: -250px;
+
+  }
+  
+  .orange-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .orange-control img {
+    width: 230px;
+    
+  }
+
+
+
+
+
+
+
+  
+  .light-control {
+    position: absolute;
+    left: 298.5px;
+    opacity: 0.9;
+    background-color: transparent;
+    border: none;
+    top: 180px;
+    z-index: 6;
+  
+  }
+  .light-control img{
+      width: 258px;
+
+  }
+
+  .light-control button {
+    position: absolute;
+    border: none;
+    left: 129px;
+    top:-80px;
+  }
+
+  .light-control button img {
+    width: 220px;
+    z-index: 6;
+  }
 #wholemilk img {
     width: 500px
 }
