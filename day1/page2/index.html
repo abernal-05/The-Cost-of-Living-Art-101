@@ -16,7 +16,7 @@
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="java/java.js" DEFER></script> 
-	<script src="./Java/audio-manager.js" DEFER></script>
+	<script src="../../Java/audio-manager.js" DEFER></script>
 	
 
 </head>
@@ -108,26 +108,6 @@
 
 
 
-
-<script>
-let audioPlayed = false;
-const audio = document.getElementById('myAudio');
-
-// Try multiple user interaction events
-['click', 'touchstart', 'keydown', 'scroll', 'mousemove'].forEach(event => {
-  document.addEventListener(event, function playAudio() {
-    if (!audioPlayed) {
-      audio.play().then(() => {
-        audioPlayed = true;
-        console.log('Audio started playing');
-      }).catch(e => {
-        console.log('Audio play failed:', e);
-      });
-    }
-  }, { once: true, passive: true });
-});
-
-</script>
 
 </body>
 </html>

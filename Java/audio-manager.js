@@ -20,7 +20,7 @@ class AudioManager {
         document.body.appendChild(this.audio);
 
         // Resume from saved state
-        this.resumeAudio();
+      /*  this.resumeAudio(); */
         
         // Start audio on user interaction
         this.setupUserInteraction();
@@ -112,7 +112,7 @@ class AudioManager {
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Replace 'your-audio.m4a' with your actual audio file path
-    window.audioManager = new AudioManager('your-audio.m4a');
+    window.audioManager = new AudioManager('song/song.m4a');
     
     // Restore volume if saved
     const savedVolume = localStorage.getItem('bgAudioVolume');
