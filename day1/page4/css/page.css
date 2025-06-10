@@ -168,6 +168,34 @@ ul li.checked::before{
     width: 200px;
     
   }
+
+  
+
+#beef-in-cart {
+    position: absolute;
+    display:none;
+    top: 500px;
+    left: 670px;
+    width: 100px;
+  }
+  
+  .beef-control {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+
+  }
+  
+  .beef-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .beef-control img {
+    width: 200px;
+    
+  }
   
 
 

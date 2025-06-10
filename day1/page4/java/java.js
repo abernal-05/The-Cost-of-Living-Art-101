@@ -12,3 +12,7 @@ function toggleOatInCart() {
     $("#tofu-in-cart").toggle();
     $("#tofuburger-button-img").hide();
   }
+    function toggleBeefInCart() {
+    $("#beef-in-cart").toggle();
+    $("#beefburger-button-img").hide();
+  }
