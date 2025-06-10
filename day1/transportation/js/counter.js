@@ -16,6 +16,13 @@ $(document).ready(function(){
         $("#chosen-transport").append(button);
         $("#rideBus").click(function() {
             window.location.href = "../page5/bus-stop/index.html"; 
+            const data = {
+                driveWalk: false,
+                driveCar: false,
+                driveBike: false,
+                rideBus: true}
+                localStorage.setItem("imageStatus", JSON.stringify(data));
+
         })
     });
     $("#drive").click(function() {
@@ -29,8 +36,16 @@ $(document).ready(function(){
         $("#chosen-transport").append(button);
         $("#driveCar").click(function() {
             window.location.href = "../page5/drive/index.html";//still need link to next page
+                const data = {
+                    driveWalk: false,
+                    driveCar: true,
+                    driveBike: false,
+                    rideBus: false}
+                    localStorage.setItem("imageStatus", JSON.stringify(data));
+    
+            })
         });
-    });
+   
         
     });
 
@@ -45,7 +60,14 @@ $(document).ready(function(){
         const button = "<button id = driveBike> Ride your Bike to class </button>";
         $("#chosen-transport").append(button);
         $("#driveBike").click(function() {
-            window.location.href = "../page5/garage/index.html"; //still need link to next page
+            window.location.href = "../page5/garage/index.html"; 
+            const data = {
+                driveWalk: false,
+                driveCar: false,
+                driveBike: true,
+                rideBus: false}
+                localStorage.setItem("imageStatus", JSON.stringify(data));
+
         })
         
         
@@ -63,7 +85,14 @@ $(document).ready(function(){
         const button = "<button id = driveWalk> Walk to class </button>";
         $("#chosen-transport").append(button);
         $("#driveWalk").click(function() {
-            window.location.href = "../page5/walk/index.html"; //still need link to next page
+            window.location.href = "../page5/walk/index.html";
+            const data = {
+                driveWalk: true,
+                driveCar: false,
+                driveBike: false,
+                rideBus: false}
+                localStorage.setItem("imageStatus", JSON.stringify(data)); 
+            
         })
         
         
