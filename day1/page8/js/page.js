@@ -3,19 +3,19 @@ $(document).ready(function () {
   
     if (statusData) {
       const myImageMsg = statusData.myImage
-        ? "You left the lamp on. Make sure you turn lights off before you leave the house."
-        : "You turned off the lamp.";
+        ? "Good job, you walked to class! Walking decreases carbon footprint."
+        : "Good job, you walked to class! Walking decreases carbon footprint.";
   
       const darknessMsg = statusData.darkness
-        ? "Good job! You turned the big light off."
-        : "You left the big light on. Make sure you turn lights off before you leave the house.";
+        ? "You chose to drive. Driving can be harmful to th environment due to its emission rates."
+        : "You chose to drive. Driving can be harmful to th environment due to its emission rates.";
   
       const starlightMsg = statusData.starlight
-        ? "You left the star lights on. Make sure you turn lights off before you leave the house."
-        : "Good job! You turned the star lights off.";
+        ? "Good job! You chose to bike, which helped you get to class faster and reduced your carbon footprint."
+        : "Good job! You chose to bike, which helped you get to class faster and reduced your carbon footprint.";
   
       const laptopImageMsg = statusData.laptopImage
-        ? "You left your laptop open. Make sure to close and power off your electronics before leaving."
+        ? "You chose to take the bus. The bus can be a better option than driving a car, "
         : "Good job! You closed your laptop.";
   
       const statusHTML = `
