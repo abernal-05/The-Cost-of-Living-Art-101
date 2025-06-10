@@ -18,10 +18,7 @@ function toggleOatInCart() {
     function toggleBeefInCart() {
     $("#beef-in-cart").toggle();
     $("#beefburger-button-img").hide();
-<<<<<<< HEAD
     $("#tofuburger-button-img").hide();
-=======
->>>>>>> eaf823f70a1f50e96845d0241786360636c8223c
   }
    function toggleStrawberryInCart() {
     $("#strawberry-in-cart").toggle();
@@ -30,10 +27,6 @@ function toggleOatInCart() {
   }
    function toggleOrangeInCart() {
     $("#orange-in-cart").toggle();
-<<<<<<< HEAD
     $("#orange-button-img").hide();
     $("#strawberries-button-img").hide();
-=======
-    $("#oranges-button-img").hide();
->>>>>>> eaf823f70a1f50e96845d0241786360636c8223c
   }
