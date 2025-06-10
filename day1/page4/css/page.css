@@ -114,15 +114,36 @@ ul li.checked::before{
     width: 300px;
     
   }
+
+
+  #whole-in-cart {
+    position: absolute;
+    display:none;
+    top: 450px;
+    left: 600px;
+    width: 200px;
+  }
+  
+  .whole-control {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+
+  }
+  
+  .whole-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .whole-control img {
+    width: 300px;
+    
+  }
   
 
-#wholemilk {         
-    background-color: transparent;
-    position: absolute;
-    border: none;
-    top: 50px;       /* distance from bottom */
-    left: 650px;
-}
+
   .light-control {
     position: absolute;
     left: 298.5px;

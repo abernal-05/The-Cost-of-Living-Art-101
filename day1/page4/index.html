@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/page.css">
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="./js/lab.js" DEFER></script> 
+	<script type="text/javascript" src="./java/java.js" DEFER></script> 
 	<script src="../../Java/audio-manager.js"></script>
 
 </head>
@@ -26,6 +26,8 @@
 		</div>
 	
 		<img id="oat-in-cart" src="img/milks (1).png" alt="oat-in-cart">
+		<img id="whole-in-cart" src="img/milks (2).png" alt="whole-in-cart">
+		<img id="tofu-in-cart" src="img/burgers (1).png" alt="tofu-in-cart">
 
 		<!-- This is the button in a different location -->
 		<div class="oat-control">
@@ -33,6 +35,17 @@
 			<img id="oatmilk-button-img" src="img/milks (1).png" alt="oatmilk">
 		  </button>
 		</div>
+		<div class="whole-control">
+		  <button onclick="toggleWholeInCart()">
+			<img id="wholemilk-button-img" src="img/milks (2).png" alt="wholemilk">
+		  </button>
+		</div>
+		<div class="tofu-control">
+		  <button onclick="toggleOatInCart()">
+			<img id="tofuburger-button-img" src="img/burgers (1).png" alt="tofuburger">
+		  </button>
+		</div>
+	
 	
 		</div>
 	
