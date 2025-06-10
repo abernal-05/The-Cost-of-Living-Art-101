@@ -3,8 +3,8 @@ $(document).ready(function () {
   
     if (statusData) {
       const OatInCartMsg = statusData.OatInCart
-        ? "You chose oat milk. Oat milk uses less water and produces fewer greenhouse emissions than dairy milk!"
-        : "You chose oat milk. Oat milk uses less water and produces fewer greenhouse emissions than dairy milk!";
+        ? "Oat milk uses less water and produces fewer greenhouse emissions than dairy milk!"
+        : "Oat milk uses less water and produces fewer greenhouse emissions than dairy milk!";
   
       const WholeInCartMsg = statusData.WholeInCart
         ? "Whole milk is significantly harmful to the enviroment and animals. "
@@ -23,8 +23,8 @@ $(document).ready(function () {
         : "Fruits in plastic, like the strawberries, grapes, and apples, are damanging to the environment and can often leach chemicals onto the fruits.";
 
         const OrangeInCartMsg = statusData.OrangeInCart
-        ? "You chose oranges. Fruits in netting bags are often environmentally sustainable because the nets are compostable!"
-        : "You chose oranges. Fruits in netting bags are often environmentally sustainable because the nets are compostable!";
+        ? "Fruits in netting bags, like the oranges, are often environmentally sustainable because the nets are compostable!"
+        : "Fruits in netting bags, like the organges, are often environmentally sustainable because the nets are compostable!";
 
 
       const statusHTML = `
