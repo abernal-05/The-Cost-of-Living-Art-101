@@ -47,7 +47,7 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
       if (checkbox) {
         checkbox.checked = true;
         saved[id] = true;
-        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
       }
     
       // Hide sleep image
@@ -84,5 +84,5 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
     }
 
     function saveOpenOrClosed(){
-      sessionStorage.setItem('laptopImageIndex', currentIndex);
+      localStorage.setItem('laptopImageIndex', currentIndex);
     }

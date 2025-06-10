@@ -75,7 +75,7 @@ $(document).ready(function(){
     
     const STORAGE_KEY = 'todoListState';
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY)) || {};
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
     
     checkboxes.forEach(checkbox => {
       const id = checkbox.dataset.id;
@@ -83,7 +83,7 @@ $(document).ready(function(){
     
       checkbox.addEventListener('change', () => {
         saved[id] = checkbox.checked;
-        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
       });
     });
     
