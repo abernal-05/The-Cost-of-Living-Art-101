@@ -94,7 +94,7 @@ ul li.checked::before{
     display:none;
     top: 450px;
     left: 400px;
-    width: 200px;
+    width: 150px;
   }
   
   .oat-control {
@@ -111,18 +111,94 @@ ul li.checked::before{
     
   }
   .oat-control img {
+    width: 250px;
+    
+  }
+
+
+  #whole-in-cart {
+    position: absolute;
+    display:none;
+    top: 450px;
+    left: 560px;
+    width: 150px;
+  }
+  
+  .whole-control {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+
+  }
+  
+  .whole-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .whole-control img {
     width: 300px;
+    
+  }
+
+  
+  #tofu-in-cart {
+    position: absolute;
+    display:none;
+    top: 450px;
+    left: 500px;
+    width: 100px;
+  }
+  
+  .tofu-control {
+    position: absolute;
+    top: 30px;
+    left: 600px;
+
+  }
+  
+  .tofu-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .tofu-control img {
+    width: 200px;
+    
+  }
+
+  
+
+#beef-in-cart {
+    position: absolute;
+    display:none;
+    top: 500px;
+    left: 670px;
+    width: 100px;
+  }
+  
+  .beef-control {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+
+  }
+  
+  .beef-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .beef-control img {
+    width: 200px;
     
   }
   
 
-#wholemilk {         
-    background-color: transparent;
-    position: absolute;
-    border: none;
-    top: 50px;       /* distance from bottom */
-    left: 650px;
-}
+
   .light-control {
     position: absolute;
     left: 298.5px;
