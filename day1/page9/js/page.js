@@ -1,48 +1,41 @@
 $(document).ready(function () {
-    const statusData = JSON.parse(localStorage.getItem("imageStatus"));
-  
-    if (statusData) {
-      const OatInCartMsg = statusData.OatInCart
-        ? "Oat milk uses less water and produces fewer greenhouse emissions than dairy milk!"
-        : "Oat milk uses less water and produces fewer greenhouse emissions than dairy milk!";
-  
-      const WholeInCartMsg = statusData.WholeInCart
-        ? "Whole milk is significantly harmful to the enviroment and animals. "
-        : "Whole milk is significantly harmful to the enviroment and animals. ";
-  
-      const TofuInCartMsg = statusData.TofuInCart
-        ? "Tofu is a better sustainable choice than meats."
-        : "Tofu is a better sustainable choice than meats.";
-  
-      const BeefInCartMsg = statusData.TofuInCart
-        ? "Beef is harmful to animals and the environment due to its land and water consumption."
-        : "Beef is harmful to animals and the environment due to its land and water consumption.";
+  const statusData = JSON.parse(localStorage.getItem("imageStatus"));
+  let statusHTML = "<ul>";
 
-        const StrawberryInCartMsg = statusData.StrawberryInCart
-        ? "Fruits in plastic, like the strawberries, grapes, and apples, are damanging to the environment and can often leach chemicals onto the fruits."
-        : "Fruits in plastic, like the strawberries, grapes, and apples, are damanging to the environment and can often leach chemicals onto the fruits.";
-
-        const OrangeInCartMsg = statusData.OrangeInCart
-        ? "Fruits in netting bags, like the oranges, are often environmentally sustainable because the nets are compostable!"
-        : "Fruits in netting bags, like the organges, are often environmentally sustainable because the nets are compostable!";
-
-
-      const statusHTML = `
-        <ul>
-          <li>${OatInCartMsg}</li>
-          <li>${WholeInCartMsg}</li>
-          <li>${TofuInCartMsg}</li>
-          <li>${StrawberryInCartMsg}</li>
-          <li>${OrangeInCartMsg}</li>
-        </ul>
-      `;
-  
-      $("#statusList").html(statusHTML);
-    } else {
-      $("#statusList").text("No toggle status found.");
+  if (statusData) {
+    // MILK
+    if (statusData.OatInCart) {
+      statusHTML += "<li> Oat milk uses less water and produces fewer greenhouse emissions than dairy milk!</li>";
+    } else if (statusData.WholeInCart) {
+      statusHTML += "<li> Whole milk is significantly harmful to the environment and animals.</li>";
     }
-  });
 
-  $("#replaceButton").on("click", function () {
-    $("#message").text("This is how you got to class...");
-  });
+    // PROTEIN
+    if (statusData.TofuInCart) {
+      statusHTML += "<li> Tofu is a better sustainable choice than meats.</li>";
+    } else if (statusData.BeefInCart) {
+      statusHTML += "<li> Beef is harmful to animals and the environment due to its land and water consumption.</li>";
+    }
+
+    // FRUIT
+    if (statusData.OrangeInCart) {
+      statusHTML += "<li> Fruits in netting bags, like the oranges, are often environmentally sustainable because the nets are compostable!</li>";
+    } else if (
+      statusData.StrawberryInCart ||
+      statusData.GrapeInCart ||
+      statusData.AppleInCart
+    ) {
+      statusHTML += "<li> Fruits in plastic, like the strawberries, grapes, and apples, are damaging to the environment and can often leach chemicals onto the fruits.</li>";
+    }
+
+    statusHTML += "</ul>";
+    $("#statusList").html(statusHTML);
+  } else {
+    $("#statusList").text("No toggle status found.");
+  }
+});
+
+// Replace message text
+$("#replaceButton").on("click", function () {
+  $("#message").text("This is how you got to class...");
+});
