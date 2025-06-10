@@ -279,6 +279,33 @@ ul li.checked::before{
   }
 
 
+   #grape-in-cart {
+    position: absolute;
+    display:none;
+    top: 530px;
+    left: 500px;
+    width: 130px;
+  }
+  
+  .grape-control {
+    position: absolute;
+    top: 360px;
+    left: 280px;
+
+  }
+  
+  .grape-control button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .grape-control img {
+    width: 250px;
+    
+  }
+
+
 
 
 

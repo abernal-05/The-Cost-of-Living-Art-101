@@ -38,3 +38,10 @@ function toggleOatInCart() {
     $("#strawberries-button-img").hide();
     $("#orange-button-img").hide();
   }
+   function toggleGrapeInCart() {
+    $("#grape-in-cart").toggle();
+    $("#grape-button-img").hide();
+    $("#strawberries-button-img").hide();
+    $("#orange-button-img").hide();
+    $("#apple-button-img").hide();
+  }
